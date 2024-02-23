@@ -90,10 +90,26 @@ input[type='checkbox'] {
   display: inline-block;
 }
 
+.features {
+  margin-top: 20px;
+}
+
 .radios,
 .checkboxes {
   display: flex;
   gap: 13px;
+  padding-bottom: 0.5rem;
+}
+
+.checkboxes:last-child {
+  margin-bottom: 20px;
+}
+
+.survey-item .checkboxes input,
+.survey-item .radios input[type="radio"] {
+  padding: 0;
+  margin: 0;
+  background: tomato;
 }
 
 button {
@@ -101,9 +117,10 @@ button {
   color: #fff;
   margin-top: 20px;
   padding: 0.7rem;
+  cursor: pointer;
 }
 
 textarea {
-  margin-top: 5px;
+  margin-top: 10px;
   border-radius: 0;
 }
